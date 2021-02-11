@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <title>Walk-in Clinic</title>
 </head>
 <body class="container py-3">
-    <header class="py-3 ">
-        <div class="mb-5">
+    <header class="py-3">
             <h3 class='float-md-start text-center'>Northern Walk-in</h3>
             <nav class="nav nav-masthead justify-content-center float-md-end">
                 <a href="#" aria-current="page" class="nav-link active text-dark">Home</a>
@@ -17,22 +18,46 @@
                 <a href="#" class="nav-link text-dark">Locations</a>
                 <a href="#" class="nav-link text-dark">Contact us</a>
             </nav>
-        </div>
     </header>
 
-    <main class="container mt-4">
-        <section class="row justify-content-center align-items-center">
-            <div class="col-sm-12 col-lg-4 me-5 text-center">
-                <h2>Providing you with world class health care since 2002</h2>
-                <p>Northern is available all across Calgary: 7 days a week ! <a href="#"> Click Here</a> too see all of our locations</p>
-                <p>Prefer to speak to one of our staff members?</p>
-                <p>Contact us at <span>1-555-123-1234</span></p>
+    <main class="container mt-5">
+        <section class="row justify-content-between align-items-center gx-5 landing">
+            <div class="col-sm-12 col-lg-5 text-center ">
+                <h1 class="mb-4">Providing you with world class health care since 2002</h1>
+                <p class="fs-5 mt-4">Northern is available all across Calgary: 7 days a week <a class="fw-light" href="#"> click here</a> too see all of our locations</p>
+                <p class="mt-3">Prefer to speak to one of our staff members?</p>
+                <p>Contact us at <span class="fw-bold"><i class="bi bi-telephone-fill"></i> 1-555-123-1234</span></p>
             </div>
             <div class="col-sm-12 col-lg-6">
                 <img src="./images/undraw_medicine_b1ol.svg" alt="picture of doctors" class="img-fluid">
             </div>
         </section>
-        <section class="row"></section>
+        <section class="row justify-content-center align-items-center card-section">
+                <h2 class="col-12 text-center">What we offer</h2>
+                <div class="row gx-5 align-items-center justify-content-center mt-5">
+                    <div class="col-lg-3 col-sm-12 text-center shadow card-m-2">
+                        <i class="far fa-clock card-img mt-2"></i>
+                        <h3 class="heading mt-3 mb-3">Apointments</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iusto ut facere ullam fugiat 
+                            laudantium architecto voluptatem, esse dolor pariatur libero molestias placeat nihil </p>
+                            <button type='button' class="btn btn-outline-primary m-2">Learn more</button>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 text-center shadow card-m-2">
+                        <i class="fas fa-stethoscope card-img mt-2"></i>
+                        <h3 class="heading mt-3 mb-3">Family Doctors</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iusto ut facere ullam fugiat 
+                            laudantium architecto voluptatem, esse dolor pariatur </p>
+                            <button type='button' class="btn btn-outline-primary m-2">Learn more</button>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 text-center shadow card-m-2">
+                        <i class="fas fa-user-md card-img mt-2"></i>
+                        <h3 class="heading mt-3 mb-3">Psychiatrists</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iusto ut facere ullam fugiat 
+                            laudantium architecto voluptatem, esse dolor pariatur libero molestias placeat nihil </p>
+                            <button type='button' class="btn btn-outline-primary m-2">Learn more</button>
+                    </div>
+                </div>
+        </section>
         <footer class="row"></footer>
     </main>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
