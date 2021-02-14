@@ -36,6 +36,21 @@ header {
   background-color: $background;
 }
 
+.about-us-main {
+  background-color: $background;
+}
+
+.contact-section-hero {
+  background-color: $background;
+  padding: 6rem;
+  position: relative;
+  bottom: 3.5rem;
+}
+
+.contact-cards-section {
+  bottom: 5rem;
+}
+
 // Medium devices (tablets, less than 992px)
 @media (max-width: 1199.98px) {
   header {
@@ -45,11 +60,21 @@ header {
   .card-m-2 {
     margin: 2.1rem;
   }
+
+  .contact-section-hero {
+    background-color: $background;
+    padding: 4.5rem;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 768px) {
   header {
     margin-bottom: 2rem;
+  }
+
+  .contact-section-hero {
+    padding: 1.5rem;
+    bottom: 0rem;
   }
 }
