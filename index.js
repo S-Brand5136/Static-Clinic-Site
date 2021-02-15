@@ -21,15 +21,15 @@ let locations = {
 let mymap = L.map("mapid").setView([51.0734234, -114.0505892], 11);
 
 list.addEventListener("click", (e) => {
-  if (e.target.parentElement.localName === "li") {
-    removeActiveClass();
-    e.target.parentElement.classList.add("active");
-  } else if (e.target.localName === "li") {
-    removeActiveClass();
-    e.target.classList.add("active");
-  }
+  const element =
+    e.target.parentElement.localName === "li"
+      ? e.target.parentElement
+      : e.target;
 
-  switch (e.target.id || e.target.parentElement.id) {
+  removeActiveClass();
+  element.classList.add("active");
+
+  switch (element.id) {
     case "nw-address": {
       mymap.flyTo(
         new L.LatLng(locations.nwLocation.lat, locations.nwLocation.long),
