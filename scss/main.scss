@@ -28,6 +28,7 @@ a:hover {
 
 .active {
   background-color: $highlight !important;
+  border-color: $highlight !important;
 }
 
 .list-group-item {
