@@ -8,6 +8,28 @@ a:hover {
   text-decoration: underline;
 }
 
+.btn-outline-primary:hover {
+  background-color: $highlight;
+  border-color: $highlight;
+}
+
+.btn-outline-primary {
+  border-color: #6c63ff;
+  color: black;
+}
+
+.btn-primary {
+  background-color: $highlight;
+  border-color: $highlight;
+}
+.btn-primary:hover {
+  background-color: $secondary-highlight;
+}
+
+.active {
+  background-color: $highlight !important;
+}
+
 .list-group-item {
   cursor: pointer;
 }
