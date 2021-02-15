@@ -8,6 +8,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.list-group-item {
+  cursor: pointer;
+}
+
 .highlight {
   color: $highlight;
 }
@@ -47,8 +51,8 @@ header {
   bottom: 3.5rem;
 }
 
-#map {
-  height: 100%;
+#mapid {
+  height: 512px;
 }
 
 .contact-cards-section {
